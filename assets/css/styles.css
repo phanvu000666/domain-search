@@ -1,0 +1,156 @@
+:root {
+    --red-color: rgb(254 100 100);
+    --blue-color: rgb(34 153 219);
+    --while-color: #fff;
+    --border-color: rgb(226, 224, 224);
+    --text-color: rgb(107, 107, 107);
+
+    --input-height: 32px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* base */
+.btn {
+    min-width: 163px;
+    min-height: 36px;
+    border: none;
+    outline: none;
+    color: var(--while-color);
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.red {
+    color: var(--red-color);
+}
+
+.blue {
+    color: var(--blue-color);
+}
+
+.registered {
+    background-color: var(--red-color);
+}
+
+.unregistered {
+    background-color: var(--blue-color);
+}
+
+/* css */
+.search {
+    padding: 30px;
+}
+
+.search-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-header-heading {}
+
+.search-header-description {
+    color: var(--text-color);
+}
+
+.search-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.search-main {
+    width: 30%;
+
+}
+
+.search-main-heading {}
+
+.search-main-sepatator,
+.search-result-sepatator {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    margin: 16px 0;
+}
+
+.search-main-input {
+
+    position: relative;
+}
+
+.search-input {
+    width: 96%;
+    height: var(--input-height);
+    padding: 20px;
+    margin: 0 6px;
+    color: var(--blue-color);
+    border: 1px solid var(--border-color);
+    outline: none;
+    border-radius: 6px;
+    fill: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 24px;
+    top: calc(var(--input-height) - 20px);
+    color: rgb(69 69 69);
+}
+.search-main-description {
+    display: block;
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 16px 0 32px;
+    text-align: center;
+}
+
+.search-main-selecttive {}
+
+.search-main-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.check {
+    width: 33%;
+    margin-bottom: 20px;
+}
+.check-input {
+}
+.search-result {
+    margin-left: 50px;
+    flex: 1;
+}
+
+.search-result-heading {}
+
+.search-result-sepatator {}
+
+.search-result-list {}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    padding: 6px;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+
+.domain-name-search {
+    margin-left: 15px;
+}
